@@ -64,7 +64,7 @@ var init = () => {
 
     // prestige
     {
-        prestige = theory.createUpgrade(0, currency, new FreeCost());
+        prestige = theory.createUpgrade(4, currency, new FreeCost());
         prestige.getDescription = (_) => "Open t clicker Menu";
         prestige.getInfo = (amount) => "Open t clicker Menu";
         prestige.boughtOrRefunded = (_) => {
