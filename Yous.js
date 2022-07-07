@@ -21,6 +21,7 @@ var q = BigNumber.ONE
 const RESOURCE = 0, RESOURCE_U = 1, RESOURCE_Q = 2
 var t = BigNumber.ZERO
 var tpc = BigNumber.ONE
+var tps = BigNumber.ZERO
 
 
 var init = () => {
