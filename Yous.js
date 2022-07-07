@@ -68,7 +68,7 @@ var init = () => {
         prestige.getDescription = (_) => "Open t clicker Menu";
         prestige.getInfo = (amount) => "Open t clicker Menu";
         prestige.boughtOrRefunded = (_) => {
-            psPUP.show();
+            popup.show();
             prestige.level = 0;
         }
     }
@@ -158,6 +158,8 @@ var init = () => {
 var updateAvailability = () => {
     xExp.isAvailable = unlockXX.level > 0;
     xx.isAvailable = unlockXX.level > 0;
+    unlockTC.isAvailable = xExp.level > 2;
+    prestige.isAvailable = unlockTC.level > 0;
 }
 
 var tick = (elapsedTime, multiplier) => {
