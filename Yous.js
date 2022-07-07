@@ -79,6 +79,8 @@ var init = () => {
     theory.createAutoBuyerUpgrade(2, currency, 1e21);
 
     // milestone upg
+    theory.setMilestoneCost(new LinearCost(6, Math.log10(40)));
+
     {
         unlockXX = theory.createMilestoneUpgrade(0, 1);
         unlockXX.description = "Unlock at $x_x$.";
